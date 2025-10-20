@@ -1,0 +1,141 @@
+.banner-img {
+    margin-top: 60px;
+  }
+
+  .banner-img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+  }
+
+  .card-img-fixed {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .home-page h1 {
+    color: gray;
+    font-family: "Playfair Display", serif;
+  }
+  
+  .home-page {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .home-page .col-md-3 {
+    height: 100vh;
+    margin: 1rem 0px;
+  }
+
+  .home-page .col-md-9::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .home-page .col-md-9::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+  }
+
+  .home-page .card {
+    background-color: rgba(128, 128, 128, 0.097);
+    width: 18rem;
+  }
+  .home-page .card-name-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .home-page .card-price {
+    color: green;
+    font-weight: bold;
+  }  
+  .category-product-page .card-price {
+    color: green;
+    font-weight: bold;
+  } 
+  .search-page .card-price {
+    color: green;
+    font-weight: bold;
+  } 
+  .product-detail-page .card-price {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .home-page .card-text {
+    color: rgb(90, 89, 89);
+  }
+  
+  .home-page .card img:hover {
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+  }
+   .search-page .card img:hover {
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+  }
+   .category-product-page .card img:hover {
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+  } 
+  .product-detail-page .card img:hover {
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+  }  
+  .admin-products .card img:hover {
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+  }
+  
+  .home-page .card-img-top {
+    height: 300px !important;
+  }
+  /* ==================
+  filters
+  ============== */
+  .filters {
+    position: sticky;
+    top: 100px; /* adjust according to your navbar height */
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+  }
+
+
+  .filters h4 {
+    margin-top: 1rem;
+    color: gray !important;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.337);
+  }
+  
+  .checkbox {
+    margin-left: 10px;
+  }
+  
+  .ant-checkbox-wrapper {
+    margin: 2px;
+  }
+  .ant-radio-wrapper {
+    margin-bottom: 5px !important;
+    margin-left: 10px;
+  }
+  
+  .filters button {
+    background-color: black;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    margin-top: 20px;
+  }
+  
+  .loadmore {
+    color: green;
+    font-weight: bold;
+    font-size: 20px !important;
+  }
