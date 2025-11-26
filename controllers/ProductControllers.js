@@ -123,7 +123,6 @@ export const getAllProductsController = async (req,res) =>{
     }
 }
 
- 
 
 export const getSingleProductController = async (req,res) =>{ 
     try {
@@ -283,7 +282,6 @@ export const searchProductController = async (req,res) =>{
         });
     }
 }
-
 
 
 export const relatedProductsController = async (req,res) => {
