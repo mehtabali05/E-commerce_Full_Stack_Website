@@ -3,11 +3,13 @@ import mongoose from "mongoose";
 const productSchema = new mongoose.Schema({
     name: {
         type: String,
-        required: true
+        required: true,
+        trim: true
     },
     slug: {
         type: String,
-        required: true
+        required: true,
+        unique: true
     },
     description: {
         type: String,
@@ -28,10 +30,12 @@ const productSchema = new mongoose.Schema({
     },
     quantity: {
         type: Number,
-        required: true
+        required: true,
+        default: 0
     },
     shipping: {
         type: Boolean,
+        default: false
     },
    
 },{timestamps:true});
