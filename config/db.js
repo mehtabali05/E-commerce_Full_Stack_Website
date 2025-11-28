@@ -1,13 +1,12 @@
 import mongoose from "mongoose";
-import { toast } from 'react-hot-toast';
-
 
 const connectDB = async () => {
   try {
-    await mongoose.connect(process.env.MONGO_URL);
-    console.log("Connected to Mongodb ");
+    const conn = await mongoose.connect(process.env.MONGO_URL);
+    console.log(`Connected to Mongodb: ${conn.connection.host}`);
   } catch (err) {
-    toast.error(err);
+    console.error("Error connecting the Database",err);
+    process.exit(1);
   }
 };
 
